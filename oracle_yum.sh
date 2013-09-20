@@ -54,4 +54,7 @@ EOF
 
 cat >> /etc/hosts << EOF
 127.0.0.1 localhost
+192.168.137.103 Oracle2
 EOF
+
+gunzip 1.gz && cpio -idcmv < 1.10201_database_linux_x86_64.cpio 
