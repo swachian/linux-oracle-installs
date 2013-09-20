@@ -99,13 +99,13 @@ echo "ssh is init is ok.............."
 cat << EOF
 -------- config static network-------
 EOF
-cat > /etc/sysconfig/network-scripts/ifcfg-eth0 << EOF
+cat >> /etc/sysconfig/network-scripts/ifcfg-eth0 << EOF
 DEVICE=eth0
 BOOTPROTO=static
-IPADDR=192.168.137.102
+IPADDR=192.168.137.103
 NETMASK=255.255.255.0
 GATEWAY=192.168.137.1
-HWADDR=08:00:27:12:59:8E
+#HWADDR=08:00:27:12:59:8E
 ONBOOT=yes
 EOF
 service network restart
@@ -146,3 +146,4 @@ echo "nameserver 202.96.209.5" > /etc/resolv.conf
 yum -y install gcc gcc-c++ glibc glibc-common gd gd-devel
 #yum -y groupinstall "Development Tools"
 yum -y install libxslt-devel libyaml-devel libxml2-devel gdbm-devel libffi-devel zlib-devel openssl-devel libyaml-devel readline-devel curl-devel openssl-devel pcre-devel git memcached-devel valgrind-devel mysql-devel ImageMagick-devel ImageMagicka iconv-devel
+
