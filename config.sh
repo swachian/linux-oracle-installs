@@ -124,7 +124,7 @@ do
 CURSRV=`echo $i|cut -c 15-`
 echo $CURSRV
 case $CURSRV in
-crond | irqbalance | microcode_ctl | network | random | sshd | syslog | local )
+crond | irqbalance | microcode_ctl | network | random | sshd | syslog | local | prefdm )
 echo "Base services, Skip!"
 ;;
 *)
@@ -146,4 +146,3 @@ echo "nameserver 202.96.209.5" > /etc/resolv.conf
 yum -y install gcc gcc-c++ glibc glibc-common gd gd-devel
 #yum -y groupinstall "Development Tools"
 yum -y install libxslt-devel libyaml-devel libxml2-devel gdbm-devel libffi-devel zlib-devel openssl-devel libyaml-devel readline-devel curl-devel openssl-devel pcre-devel git memcached-devel valgrind-devel mysql-devel ImageMagick-devel ImageMagicka iconv-devel
-
