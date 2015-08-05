@@ -124,7 +124,7 @@ do
 CURSRV=`echo $i|cut -c 15-`
 echo $CURSRV
 case $CURSRV in
-crond | irqbalance | microcode_ctl | network | random | sshd | syslog | local | prefdm )
+crond | irqbalance | microcode_ctl | network | random | sshd | syslog | local | messagebus )
 echo "Base services, Skip!"
 ;;
 *)
