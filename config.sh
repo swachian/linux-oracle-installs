@@ -146,3 +146,4 @@ echo "nameserver 202.96.209.5" > /etc/resolv.conf
 yum -y install gcc gcc-c++ glibc glibc-common gd gd-devel
 #yum -y groupinstall "Development Tools"
 yum -y install libxslt-devel libyaml-devel libxml2-devel gdbm-devel libffi-devel zlib-devel openssl-devel libyaml-devel readline-devel curl-devel openssl-devel pcre-devel git memcached-devel valgrind-devel mysql-devel ImageMagick-devel ImageMagicka iconv-devel
+yum install glibc.i686 zlib.i686 libXp.i686 libXt.i686 libXtst.i686 #运行java图形界面需要的一些32位的图形相关包
