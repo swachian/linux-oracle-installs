@@ -6,4 +6,20 @@
 
 - dbstart.sh: Oracle的开机启动脚本，可放入`/etc/rc.local`中，用`su - oracle -c "/bin/bash /home/oracle/dbstart.sh"` 运行
 
+- 装机相关：
 
+1. 系统参数调整: 参见`config.sh`
+
+2. jdk下载、解压与配置环境变量
+
+3. nginx下载与安装
+
+4. redis安装与配置
+
+5. mysql安装
+
+6. tomcat安装
+
+7. 开机自动启动
+
+8. 安装自动监控工具
