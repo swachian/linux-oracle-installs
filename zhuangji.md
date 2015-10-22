@@ -189,6 +189,24 @@ webapps下面的自带的应用可以全部删掉。7和5不同，manager是从�
 
 多一个杂应用，就多一个隐患。
 
+reboot的脚本
+
+```shell
+if [ ! -z "$procDec" ]; then  
+    echo process remain: ---- $procDec  
+    arr=($procDec)  
+    echo kill process : "${arr[0]}"  
+    kill -9 ${arr[0]}  
+fi
+
+if [ `whoami` = "root"]; then
+  su - deploy -c "/home/deploy/apache-tomcat-7.0.55/bin/startup.sh"
+else
+  echo "not root "
+  /home/deploy/apache-tomcat-7.0.55/bin/startup.sh
+fi
+```
+
 ### 配置java参数
 
 在`catalina.sh`中增加
